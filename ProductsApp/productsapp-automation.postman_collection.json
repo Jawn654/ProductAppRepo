@@ -16,8 +16,8 @@
             "exec": [
               "var jsonData = pm.response.json();\r",
               "pm.test(\"value of [0].Id to be 1\", () => {pm.expect(jsonData[0].Id).to.equal(1)});\r",
-              "pm.test(\"value of [0].Id to be 1\", () => {pm.expect(jsonData[1].Id).to.equal(2)});\r",
-              "pm.test(\"value of [0].Id to be 1\", () => {pm.expect(jsonData[2].Id).to.equal(3)});\r",
+              "pm.test(\"value of [0].Id to be 2\", () => {pm.expect(jsonData[1].Id).to.equal(2)});\r",
+              "pm.test(\"value of [0].Id to be 3\", () => {pm.expect(jsonData[2].Id).to.equal(3)});\r",
               "pm.test(\"response to be 200 OK\", () => {pm.response.to.have.status(200)});"
             ],
             "type": "text/javascript",
